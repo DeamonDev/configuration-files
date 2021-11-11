@@ -12,11 +12,16 @@
 
 (set-face-attribute 'default nil 
 		    :family "Source Code Pro"
-		    :height 180
+		    :height 160
 		    :weight 'normal
 		    :width 'normal)
 
-(load-theme 'wombat t)
+(load-theme 'dracula t)
+
+(require 'doom-modeline)
+(doom-modeline-mode 1)
+
+(setq doom-modeline-height 15)
 
 (blink-cursor-mode 0)
 
@@ -45,7 +50,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(global-command-log-mode t)
- '(package-selected-packages '(counsel command-log-mode use-package)))
+ '(package-selected-packages
+   '(doom-modeline dracula-theme counsel command-log-mode use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
