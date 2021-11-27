@@ -1,1 +1,0 @@
-("~/" "~/my-git-repo/" "~/IdeaProjects/spark-essentials/")
